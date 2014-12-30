@@ -25,6 +25,6 @@ defmodule IntellijElixir.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:exrm, "~> 0.14.16"}]
   end
 end
