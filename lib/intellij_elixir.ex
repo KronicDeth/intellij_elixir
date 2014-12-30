@@ -1,0 +1,2 @@
+defmodule IntellijElixir do
+end
