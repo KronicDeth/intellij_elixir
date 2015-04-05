@@ -1,4 +1,8 @@
+# IDEA ignores - see https://intellij-support.jetbrains.com/entries/23393067
+/.idea/workspace.xml
+# mix new ignores
 /_build
 /deps
 erl_crash.dump
 *.ez
+
