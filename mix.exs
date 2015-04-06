@@ -3,7 +3,7 @@ defmodule IntellijElixir.Mixfile do
 
   def project do
     [app: :intellij_elixir,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.0",
      deps: deps]
   end
