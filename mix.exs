@@ -3,7 +3,7 @@ defmodule IntellijElixir.Mixfile do
 
   def project do
     [app: :intellij_elixir,
-     version: "0.1.1",
+     version: "1.0.0",
      elixir: "~> 1.0",
      deps: deps]
   end
@@ -26,6 +26,6 @@ defmodule IntellijElixir.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:exrm, "~> 0.14.16"}]
+    [{:distillery, "~> 1.1"}]
   end
 end
