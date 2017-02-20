@@ -1,3 +1,5 @@
-%{"conform": {:hex, :conform, "0.11.0", "fe5a68ab8533b53b4a463aa2ee71c622bea19b86e0183b8d34c23c6b8ed17dc7", [:mix], []},
+%{"bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], []},
+  "conform": {:hex, :conform, "0.11.0", "fe5a68ab8533b53b4a463aa2ee71c622bea19b86e0183b8d34c23c6b8ed17dc7", [:mix], []},
+  "credo": {:hex, :credo, "0.6.1", "a941e2591bd2bd2055dc92b810c174650b40b8290459c89a835af9d59ac4a5f8", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, optional: false]}]},
   "distillery": {:hex, :distillery, "1.1.2", "4cf32ecc70ca7eecca9e52e111edf320bd78011050825863cd8bc7ffee686c5d", [:mix], []},
   "exrm": {:hex, :exrm, "0.14.16", "8a222b1daeb9aa29ffcbb8d98980de65fb7f159c503b102e661a933d8ce01494", [:mix], [{:conform, "~> 0.11.0", [hex: :conform, optional: false]}]}}

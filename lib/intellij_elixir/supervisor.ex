@@ -1,12 +1,18 @@
 defmodule IntellijElixir.Supervisor do
+  @moduledoc """
+  Supervises `IntellijElixir.Quoter`
+  """
+
   use Supervisor
 
+  @spec start_link :: {:ok, pid}
   def start_link do
     Supervisor.start_link(__MODULE__, :ok)
   end
 
   @quoter_module IntellijElixir.Quoter
 
+  @spec init(:ok) :: {:ok, tuple}
   def init(:ok) do
     children = [
       worker(@quoter_module, [[], [name: @quoter_module]])
