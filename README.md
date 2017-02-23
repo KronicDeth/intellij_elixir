@@ -1,6 +1,7 @@
 IntellijElixir
 ==============
 
+[![Build Status](https://travis-ci.org/KronicDeth/intellij_elixir.svg?branch=master)](https://travis-ci.org/KronicDeth/intellij_elixir)
 [![Code Climate](https://codeclimate.com/github/KronicDeth/intellij_elixir/badges/gpa.svg)](https://codeclimate.com/github/KronicDeth/intellij_elixir)
 
 Elixir helpers for [intellj-elixir](https://github.com/KronicDeth/intellij-elixir),
