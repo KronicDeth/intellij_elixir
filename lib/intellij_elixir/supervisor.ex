@@ -12,7 +12,7 @@ defmodule IntellijElixir.Supervisor do
 
   @quoter_module IntellijElixir.Quoter
 
-  @spec init(:ok) :: {:ok, tuple}
+  @spec init(:ok) :: {:ok, {{:one_for_one, 1000, 4}, [Supervisor.Spec.spec]}}
   def init(:ok) do
     children = [
       worker(@quoter_module, [[], [name: @quoter_module]])

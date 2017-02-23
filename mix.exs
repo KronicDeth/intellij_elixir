@@ -7,7 +7,8 @@ defmodule IntellijElixir.Mixfile do
       deps: deps(),
       elixir: "~> 1.0",
       preferred_cli_env: [
-        "credo": :test
+        "credo": :test,
+        "dialyzer": :test
       ],
       version: "1.0.0"
     ]
@@ -33,6 +34,7 @@ defmodule IntellijElixir.Mixfile do
   defp deps do
     [
       {:credo, "~> 0.6.1", only: :test},
+      {:dialyxir, "~> 0.5", only: :test, runtime: false},
       {:distillery, "~> 1.1"}
     ]
   end

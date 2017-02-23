@@ -1,2 +1,9 @@
+cache:
+  directories:
+    - _build
+    - deps
 language: elixir
 sudo: false
+script:
+- mix test
+- mix dialyzer
