@@ -1,5 +1,6 @@
 # IDEA ignores - see https://intellij-support.jetbrains.com/entries/23393067
 /.idea/workspace.xml
+/.idea/markdown*
 # mix new ignores
 /_build
 /deps
