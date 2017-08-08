@@ -35,7 +35,7 @@ defmodule IntellijElixir.Mixfile do
     [
       {:credo, "~> 0.6.1", only: :test},
       {:dialyxir, "~> 0.5", only: :test, runtime: false},
-      {:distillery, "~> 1.1"}
+      {:distillery, "~> 1.4", runtime: false}
     ]
   end
 end
