@@ -40,5 +40,8 @@ end
 
 release :intellij_elixir do
   set version: current_version(:intellij_elixir)
+  set applications: [
+    :runtime_tools
+  ]
 end
 
