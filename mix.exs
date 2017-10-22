@@ -2,10 +2,16 @@ defmodule IntellijElixir.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :intellij_elixir,
-     version: "0.1.1",
-     elixir: "~> 1.0",
-     deps: deps]
+    [
+      app: :intellij_elixir,
+      deps: deps(),
+      elixir: "~> 1.0",
+      preferred_cli_env: [
+        "credo": :test,
+        "dialyzer": :test
+      ],
+      version: "1.0.0"
+    ]
   end
 
   # Configuration for the OTP application
@@ -26,6 +32,10 @@ defmodule IntellijElixir.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:exrm, "~> 0.14.16"}]
+    [
+      {:credo, "~> 0.6.1", only: :test},
+      {:dialyxir, "~> 0.5", only: :test, runtime: false},
+      {:distillery, "~> 1.4", runtime: false}
+    ]
   end
 end

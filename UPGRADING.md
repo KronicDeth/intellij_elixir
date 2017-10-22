@@ -1,5 +1,9 @@
 # Upgrading
 
+## v1.0.0
+
+If upgrading from v0.1.1 or earlier, you'll need to change the path to start the release from `rel/intellij_elixir/bin/intellij_elixir` to `_build/prod/rel/intellij_elixir/bin/intellij_elixir`.
+
 ## v0.1.0
 
 If upgrading from v0.0.1, you'll now need to perform `GenServer.call IntellijElixir.Quoter, code` instead of
