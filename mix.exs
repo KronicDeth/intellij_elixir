@@ -5,7 +5,10 @@ defmodule IntellijElixir.Mixfile do
     [
       app: :intellij_elixir,
       deps: deps(),
+      description: description(),
+      docs: docs(),
       elixir: "~> 1.0",
+      package: package(),
       preferred_cli_env: [
         "credo": :test,
         "dialyzer": :test
@@ -35,7 +38,44 @@ defmodule IntellijElixir.Mixfile do
     [
       {:credo, "~> 0.6.1", only: :test},
       {:dialyxir, "~> 0.5", only: :test, runtime: false},
-      {:distillery, "~> 1.4", runtime: false}
+      {:distillery, "~> 1.4", runtime: false},
+      {:ex_doc, "~> 0.18.1", only: [:dev, :test], runtime: false}
+    ]
+  end
+
+  defp description do
+    """
+    IntellijElixir allows intellij-elixir to ask Elixir for the native quoted form of code to check that
+    intellij-elixir's quoted form matches.
+    """
+  end
+
+  defp docs do
+    [
+      extras: extras()
+    ]
+  end
+
+  defp extras do
+    [
+      "CHANGELOG.md",
+      "LICENSE.md",
+      "README.md",
+      "UPGRADING.md"
+    ]
+  end
+
+  defp package do
+    [
+      file: ["lib", "mix.exs" | extras()],
+      licenses: ["Apache 2.0"],
+      links: %{
+        "Docs" => "https://hexdocs.pm/intellij_elixir",
+        "Github" => "https://github.com/KronicDeth/intellij_elixir",
+      },
+      maintainers: [
+        "Luke Imhoff"
+      ]
     ]
   end
 end
