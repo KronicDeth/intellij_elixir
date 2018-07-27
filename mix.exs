@@ -38,7 +38,7 @@ defmodule IntellijElixir.Mixfile do
     [
       {:credo, "0.9.3", only: :test},
       {:dialyxir, "~> 0.5", only: :test, runtime: false},
-      {:distillery, "~> 1.4", runtime: false},
+      {:distillery, "~> 1.5", runtime: false},
       {:ex_doc, "~> 0.19.0", only: [:dev, :test], runtime: false},
       # dependency of `credo` that we want to force to be Elixir 1.5 compatible
       {:poison, "< 4.0.0"}
