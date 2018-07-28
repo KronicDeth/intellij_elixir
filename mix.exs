@@ -10,8 +10,8 @@ defmodule IntellijElixir.Mixfile do
       elixir: "~> 1.7",
       package: package(),
       preferred_cli_env: [
-        "credo": :test,
-        "dialyzer": :test
+        credo: :test,
+        dialyzer: :test
       ],
       version: "2.0.0"
     ]
@@ -21,8 +21,7 @@ defmodule IntellijElixir.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger],
-     mod: {IntellijElixir, []}]
+    [applications: [:logger], mod: {IntellijElixir, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -38,7 +37,10 @@ defmodule IntellijElixir.Mixfile do
     [
       {:credo, "0.9.3", only: :test},
       {:dialyxir, "~> 0.5", only: :test, runtime: false},
-      {:distillery, "~> 2.0", github: "bitwalker/distillery", ref: "86c8430cafc2f8d09cd3754b1e39d4dfcb30685f", runtime: false},
+      {:distillery, "~> 2.0",
+       github: "bitwalker/distillery",
+       ref: "86c8430cafc2f8d09cd3754b1e39d4dfcb30685f",
+       runtime: false},
       {:ex_doc, "~> 0.19.0", only: [:dev, :test], runtime: false},
       # dependency of `credo` that we want to force to be Elixir 1.5 compatible
       {:poison, "< 4.0.0"}
@@ -73,7 +75,7 @@ defmodule IntellijElixir.Mixfile do
       licenses: ["Apache 2.0"],
       links: %{
         "Docs" => "https://hexdocs.pm/intellij_elixir",
-        "Github" => "https://github.com/KronicDeth/intellij_elixir",
+        "Github" => "https://github.com/KronicDeth/intellij_elixir"
       },
       maintainers: [
         "Luke Imhoff"
