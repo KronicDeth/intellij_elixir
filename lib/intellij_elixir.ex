@@ -5,8 +5,8 @@ defmodule IntellijElixir do
 
   use Application
 
-  @spec start(Application.start_type, []) :: {:ok, pid}
+  @spec start(Application.start_type(), []) :: {:ok, pid}
   def start(_type, _args) do
-    IntellijElixir.Supervisor.start_link
+    IntellijElixir.Supervisor.start_link()
   end
 end
