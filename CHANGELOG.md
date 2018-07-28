@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.0.0
+
+### Enhancements
+* [#6](https://github.com/KronicDeth/intellij_elixir/pull/6) - Update dependencies for Elixir 1.7.1 - [@KronicDeth](https://github.com/KronicDeth)
+
+### Incompatible Changes
+* [#6](https://github.com/KronicDeth/intellij_elixir/pull/6) - Requires Elixir >= 1.7 - [@KronicDeth](https://github.com/KronicDeth)
+
 ## v1.0.0
 
 ### Enhancements
