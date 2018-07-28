@@ -41,9 +41,7 @@ defmodule IntellijElixir.Mixfile do
        github: "bitwalker/distillery",
        ref: "86c8430cafc2f8d09cd3754b1e39d4dfcb30685f",
        runtime: false},
-      {:ex_doc, "~> 0.19.0", only: [:dev, :test], runtime: false},
-      # dependency of `credo` that we want to force to be Elixir 1.5 compatible
-      {:poison, "< 4.0.0"}
+      {:ex_doc, "~> 0.19.0", only: [:dev, :test], runtime: false}
     ]
   end
 
