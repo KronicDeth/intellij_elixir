@@ -7,13 +7,13 @@ defmodule IntellijElixir.Mixfile do
       deps: deps(),
       description: description(),
       docs: docs(),
-      elixir: "~> 1.5",
+      elixir: "~> 1.7",
       package: package(),
       preferred_cli_env: [
         "credo": :test,
         "dialyzer": :test
       ],
-      version: "1.2.0"
+      version: "2.0.0"
     ]
   end
 
