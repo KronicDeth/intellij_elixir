@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.0
+
+### Enhancements
+* [#7](https://github.com/KronicDeth/intellij_elixir/pull/7) - [@KronicDeth](https://github.com/KronicDeth)
+  * Update dependencies
+    * `credo` `0.9.3` => `1.0.0`
+    * `ex_doc` `0.19.0` => `0.19.1`
+
+### Bug Fixes
+* [#7](https://github.com/KronicDeth/intellij_elixir/pull/7) - [@KronicDeth](https://github.com/KronicDeth)
+  * Remove ignored project files
+  * Update distillery to `2.0.12` for Elixir `1.7..4` compatibility.
+
 ## v2.0.0
 
 ### Enhancements
